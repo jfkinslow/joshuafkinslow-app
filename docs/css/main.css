@@ -1,0 +1,100 @@
+.container {
+}
+.container header.flex {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.container header.flex nav.flex {
+    display: flex;
+    width: 75%;
+    /*justify-content: space-evenly;*/
+    /*justify-content: center;*/
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container header.flex nav.flex a:hover {
+    color: white;
+    background: black;
+}
+
+.container header.flex nav.flex a {
+    text-decoration: none;
+    color: black;
+    padding: 24px 30px;
+    /*border: 1px solid black;*/
+}
+.container footer.footer {
+    margin: 0;
+}
+
+.container footer.footer nav.flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: black;
+    border: 1px solid black;
+    padding: 0.01em 0.0em;
+}
+
+.container footer.footer nav.flex a:hover {
+    color: black;
+    background: white;
+}
+
+.container footer.footer nav.flex a {
+    color: white;
+    padding: 12px 30px;
+}
+.container footer.footer p {
+    margin: 20px 0 0;
+    text-align: center;
+}
+
+.container section.main-content {
+    margin: 20px 5px;
+}
+
+.container section.main-content p {
+    padding: 10px 0;
+}
+
+.container section.main-content section.main-bottom-content {
+    display: flex;
+    margin: 10px 0 0 0;
+}
+
+.container section.main-content section.main-bottom-content p {
+    padding: 0 20px 0 0;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.container header.flex div.logo:hover{
+    background: black;
+}
+div.logo {
+    padding: 0;
+}
+
+@media(max-width: 800px){
+    .container {
+        width: 400px;
+    }
+    a#Home {
+        display: none;
+    }
+    .container header.flex nav.flex a {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .container footer.footer nav.flex a {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
